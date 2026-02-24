@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Invoice Receipt</title>
+  <link rel="stylesheet" href="receipt.css" />
+</head>
+<body>
+
+  <div class="receipt">
+
+    <!-- HEADER -->
+    <header class="receipt-header">
+      <h1 class="store-name">Your Store Name</h1>
+      <p class="store-info">
+        12 Main Road, Cape Town<br>
+        Tel: 021 555 1234<br>
+        VAT No: 4980123456
+      </p>
+    </header>
+
+    <!-- META INFO -->
+    <section class="receipt-meta">
+      <div>
+        <span>Invoice #</span>
+        <span>INV-20451</span>
+      </div>
+      <div>
+        <span>Date</span>
+        <span>2026-02-24 14:32</span>
+      </div>
+      <div>
+        <span>Cashier</span>
+        <span>Inga</span>
+      </div>
+    </section>
+
+    <!-- ITEMS -->
+    <section class="receipt-items">
+
+      <table>
+        <thead>
+          <tr>
+            <th class="col-item">Item</th>
+            <th class="col-qty">Qty</th>
+            <th class="col-price">Price</th>
+            <th class="col-total">Total</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Phone case</td>
+            <td>2</td>
+            <td>R15.00</td>
+            <td>R30.00</td>
+          </tr>
+          <tr>
+            <td>Milk 2L</td>
+            <td>1</td>
+            <td>R24.99</td>
+            <td>R24.99</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <!-- TOTALS -->
+    <section class="receipt-totals">
+
+      <div class="row">
+        <span>Subtotal</span>
+        <span>R54.99</span>
+      </div>
+
+      <div class="row">
+        <span>VAT (15%)</span>
+        <span>R7.17</span>
+      </div>
+
+      <div class="row grand-total">
+        <span>Total</span>
+        <span>R62.16</span>
+      </div>
+
+    </section>
+
+    <!-- PAYMENT -->
+    <section class="receipt-payment">
+      <div class="row">
+        <span>Payment method</span>
+        <span>Card</span>
+      </div>
+
+      <div class="row">
+        <span>Amount paid</span>
+        <span>R62.16</span>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="receipt-footer">
+      <p>Thank you for shopping with us!</p>
+      <p>Please keep this receipt for returns.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

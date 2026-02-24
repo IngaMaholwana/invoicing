@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.receipt {
+  width: 360px;               
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  padding: 16px;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+/* ---------------- Header ---------------- */
+
+.receipt-header {
+  text-align: center;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.store-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.store-info {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ---------------- Meta ---------------- */
+
+.receipt-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.receipt-meta div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.receipt-meta div span:first-child {
+  color: #555;
+}
+
+/* ---------------- Items ---------------- */
+
+.receipt-items table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.receipt-items thead th {
+  text-align: left;
+  border-bottom: 1px solid #000;
+  padding: 4px 0;
+}
+
+.receipt-items tbody td {
+  padding: 6px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.col-qty,
+.col-price,
+.col-total,
+.receipt-items td:nth-child(2),
+.receipt-items td:nth-child(3),
+.receipt-items td:nth-child(4) {
+  text-align: right;
+}
+
+/* ---------------- Totals ---------------- */
+
+.receipt-totals {
+  margin-top: 10px;
+  border-top: 1px dashed #000;
+  padding-top: 8px;
+  font-size: 13px;
+}
+
+.receipt-totals .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.grand-total {
+  font-weight: 700;
+  font-size: 15px;
+  border-top: 1px solid #000;
+  padding-top: 6px;
+}
+
+/* ---------------- Payment ---------------- */
+
+.receipt-payment {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.receipt-payment .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+/* ---------------- Footer ---------------- */
+
+.receipt-footer {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 11px;
+  border-top: 1px dashed #000;
+  padding-top: 8px;
+}
+
+/* ---------------- Print ---------------- */
+
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+
+  .receipt {
+    border: none;
+    width: 100%;
+    padding: 0;
+  }
+}
